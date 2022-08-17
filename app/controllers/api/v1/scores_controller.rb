@@ -1,5 +1,6 @@
 class Api::V1::ScoresController < ApplicationController
   before_action :set_score, only: [:show]
+  skip_before_filter :verify_authenticity_token, if: :json_request?
 
   def index
     @scores = Score.all 
@@ -35,6 +36,10 @@ class Api::V1::ScoresController < ApplicationController
 
   def score_parms
     params.permit(:player, :seconds, :level_id)
+  end
+
+  def json_request?
+    request.format.json?
   end
 
 end
