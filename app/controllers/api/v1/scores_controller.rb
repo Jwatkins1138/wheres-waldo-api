@@ -33,7 +33,7 @@ class Api::V1::ScoresController < ApplicationController
     @score = Score.find(params[:id])
   end
 
-  def score_parms
+  def score_params
     params.permit(:player, :seconds, :level_id)
   end
 
