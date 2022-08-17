@@ -1,6 +1,6 @@
 class Api::V1::ScoresController < ApplicationController
   before_action :set_score, only: [:show]
-  skip_before_filter :verify_authenticity_token, if: :json_request?
+  skip_before_action :verify_authenticity_token, if: :json_request?
 
   def index
     @scores = Score.all 
