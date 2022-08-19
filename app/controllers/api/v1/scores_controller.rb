@@ -2,7 +2,7 @@ class Api::V1::ScoresController < ApplicationController
   before_action :set_score, only: [:show]
 
   def index
-    @scores = Score.order(seconds: :desc) 
+    @scores = Score.order(seconds: :asc) 
     render json: @scores
   end
 
