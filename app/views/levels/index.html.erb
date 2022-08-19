@@ -9,7 +9,8 @@
 </div>
 <div id="scores">
   <% @scores.each do |score| %>
-    <%= render score %>
+    <%= score.player %>
+    <%= score.seconds %>
   <% end %>
 </div>
 
