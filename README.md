@@ -1,24 +1,5 @@
-# README
+this is the backend for a wheres waldo game. the frontend is made with react and deployed via Heroku @
+https://frozen-mesa-37325.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+frontend repo can be viewed here:
+https://github.com/Jwatkins1138/wheres-waldo-client
